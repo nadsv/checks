@@ -1,0 +1,49 @@
+.data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefit-name {
+  margin: 20px 0 0 10px;
+  font-size: 1em;
+  position: relative;
+}
+
+.small-block {
+  width: 33%;
+  min-width: 200px;
+}
+
+.delete {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.delete:hover {
+  border: 1px solid #C70039;
+  background-color: #C70039;
+}
+
+.delete:before, .delete:after {
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  content: ' ';
+  height: 12px;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.delete:before {
+  transform: rotate(45deg);
+}
+
+.delete:after {
+  transform: rotate(-45deg);
+}

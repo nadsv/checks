@@ -1,26 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { Route, Switch} from 'react-router-dom'
+
+import Toolbar from './components/Navigation/Toolbar/Toolbar'
+import Searching from './components/Searching/Searching'
+import Check from './components/Check/Check'
+import Reports from './components/Reports/Reports'
+
+import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <React.Fragment>
+          <Toolbar />
+          <main className="main">
+            <Switch>
+              <Route path="/check" component={Check} />
+              <Route path="/reports" component={Reports} />
+              <Route path="/" exact component={Searching} />
+            </Switch>
+          </main>
+        </React.Fragment>
     );
   }
 }

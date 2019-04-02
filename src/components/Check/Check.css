@@ -1,0 +1,38 @@
+.parts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border-bottom: 1px dotted #C70039;
+}
+
+.part {
+    margin: 0;
+    display: flex;
+    width: auto;
+    align-items: center;
+    font-weight: bold;
+}
+
+.part a {
+    height: 100%;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.part a:hover,
+.part a:active,
+.part a.active {
+    border-color: #ff7d00;
+    border-bottom: 4px solid #C70039;
+    color: #C70039;
+}
+
+.part a:visited {
+  color: inherit;
+}

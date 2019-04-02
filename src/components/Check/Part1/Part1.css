@@ -1,0 +1,9 @@
+.check-data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-block {
+  width: 33%;
+  min-width: 200px;
+}
